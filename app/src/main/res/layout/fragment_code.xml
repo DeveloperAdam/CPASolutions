@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    tools:context="com.techease.cpasolutions.Fragments.CodeFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="70sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verify Email"
+            android:inputType="textEmailAddress"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            android:id="@+id/tvTitleCode"/>
+
+        <EditText
+            android:id="@+id/etCode"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_marginTop="50sp"
+            android:backgroundTint="@color/colorPrimary"
+            android:hint="Code"
+            android:inputType="number"
+            android:paddingLeft="10sp"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary" />
+
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:background="@color/colorPrimary"
+            android:text="Send"
+            android:textSize="17sp"
+            android:textColor="#fff"
+            android:layout_marginTop="100sp"/>
+    </LinearLayout>
+
+</LinearLayout>

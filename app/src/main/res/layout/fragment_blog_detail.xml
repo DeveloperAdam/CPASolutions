@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.techease.cpasolutions.Fragments.BlogDetailFragment">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_marginTop="55sp"
+        android:layout_height="200sp"
+        android:scaleType="fitXY"
+        android:id="@+id/ivBlogDetail"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvBlogDetailTitle"
+        android:text="lkshfd"
+        android:maxLines="1"
+        android:layout_margin="10sp"
+        android:textSize="17sp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvBlogDetailDate"
+        android:text="lkshfd"
+        android:layout_gravity="right"
+        android:layout_margin="10sp"
+        android:textSize="17sp"
+        />
+
+
+    <EditText
+        android:id="@+id/etBlogDetailComment"
+        android:layout_width="match_parent"
+        android:layout_height="150sp"
+        android:background="@drawable/boundry"
+        android:hint="Comment Here"
+        android:gravity="top"
+        android:layout_margin="10sp"
+        android:padding="10sp"
+        android:maxLines="10"/>
+
+
+    <Button
+        android:id="@+id/btnComment"
+        android:layout_width="200sp"
+        android:layout_height="50sp"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimaryDark"
+        android:text="Submit"
+        android:textColor="#fff"
+        android:layout_marginTop="20sp"/>
+
+</LinearLayout>

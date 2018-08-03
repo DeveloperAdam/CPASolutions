@@ -1,0 +1,229 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.techease.cpasolutions.Fragments.ViewDocumentFragment">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="60sp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp">
+<TextView
+    android:id="@+id/tvDocuments"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Documents"
+    android:textSize="17sp"
+    android:textColor="@color/colorPrimaryDark"
+    android:layout_marginTop="10sp" />
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="210sp"
+    android:layout_marginTop="20sp">
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="190sp"
+            android:clickable="true"
+            android:layout_margin="5sp"
+            android:background="@drawable/boundry"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardBackgroundColor="#fff"
+            card_view:cardPreventCornerOverlap="true"
+            android:id="@+id/cvViewDoc">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/ivFileDetail"
+            android:layout_width="80sp"
+            android:layout_height="80sp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="5sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10sp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tvFileSizeView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="13.32 MB"
+                    android:textSize="17sp"
+                    android:layout_margin="5sp"
+                    android:layout_gravity="right"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10sp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0sp"
+                        android:layout_weight="0.5"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/tvFileTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="File Name"/>
+                        <TextView
+                            android:id="@+id/tvUploadBy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5sp"
+
+                            android:text="Uploaded By"/>
+                        <TextView
+                            android:id="@+id/tvSentToViewDoc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5sp"
+                            android:text="Sent To"/>
+                        <TextView
+                            android:id="@+id/tvCreationDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5sp"
+                            android:text="Created"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0sp"
+                        android:layout_weight="0.5"
+                        android:layout_marginRight="5sp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/tvFileNameSHow"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:maxLines="1"
+                            android:text="My File"/>
+                        <TextView
+                            android:id="@+id/tvUploadedByShow"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5sp"
+                            android:gravity="right"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:maxLines="1"
+                            android:text="Adam"/>
+                        <TextView
+                            android:id="@+id/tvSentToSHow"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5sp"
+                            android:gravity="right"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:maxLines="1"
+                            android:text="Jhon"/>
+                        <TextView
+                            android:id="@+id/tvCreationDateShow"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:maxLines="1"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:layout_marginTop="5sp"
+                            android:text="2/3/2018"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <Button
+        android:id="@+id/btnDownload"
+        android:layout_width="150sp"
+        android:layout_height="40sp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Downlaod"
+        android:visibility="gone"
+        android:textColor="#fff"
+        android:layout_gravity="bottom|right"/>
+</FrameLayout>
+
+
+        <TextView
+            android:id="@+id/tvMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:layout_marginLeft="10sp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2sp"
+            android:background="#BDBDBD"
+            android:layout_marginTop="5sp"/>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvNoMessage"
+            android:visibility="gone"
+            android:layout_marginTop="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Messages"
+            android:layout_gravity="center"/>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvMessage"
+            android:layout_width="match_parent"
+            android:layout_height="150sp"
+            android:layout_marginTop="20sp">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+
+</FrameLayout>
+
+        <EditText
+            android:id="@+id/etMessage"
+            android:layout_width="match_parent"
+            android:layout_height="150sp"
+            android:background="@drawable/boundry"
+            android:hint="Enter Message Here"
+            android:gravity="top"
+            android:padding="10sp"
+            android:maxLines="10"
+            android:layout_marginTop="20sp"/>
+
+        <Button
+            android:id="@+id/btnSendMessage"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:background="@color/colorPrimaryDark"
+            android:text="Post Message"
+            android:textAllCaps="false"
+            android:textSize="17sp"
+            android:textColor="#fff"
+            android:layout_marginTop="20sp"
+            android:layout_marginBottom="20sp"
+            />
+    </LinearLayout>
+</ScrollView>
+
+
+
+</LinearLayout>

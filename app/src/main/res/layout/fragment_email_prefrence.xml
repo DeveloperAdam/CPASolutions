@@ -1,0 +1,150 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    tools:context="com.techease.cpasolutions.Fragments.EmailPrefrenceFragment">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="20sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="70sp"
+        android:layout_marginBottom="20sp">
+        <TextView
+            android:id="@+id/tvEmailGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email Group"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2sp"
+            android:layout_marginLeft="10sp"
+            android:background="#BDBDBD"
+            android:layout_marginTop="5sp"/>
+        <TextView
+            android:id="@+id/tvClientPortal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Client Portal Emails"
+            android:layout_marginTop="10sp"
+            android:textColor="#000"
+            android:textSize="17sp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5sp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tvText1"
+                android:layout_width="0sp"
+                android:layout_weight="0.8"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:layout_marginTop="5sp"
+                android:text="Unsubscribe from this if you no longer\nwish to recieve emails from http://\nofficetoolsportal.com/"/>
+
+            <Switch
+                android:id="@+id/switchClient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:checked="false"
+                android:theme="@style/SCBSwitch"
+
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2sp"
+            android:layout_marginLeft="10sp"
+            android:background="#BDBDBD"
+            android:layout_marginTop="5sp"/>
+        <TextView
+            android:id="@+id/tvEsignature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Esignature Emails"
+            android:layout_marginTop="10sp"
+            android:textColor="#000"
+            android:textSize="17sp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5sp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tvText2"
+                android:layout_width="0sp"
+                android:layout_weight="0.8"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:layout_marginTop="5sp"
+                android:text="This mail group is used for esignature\nnotifications. You will not be able to sign documents."/>
+
+            <Switch
+                android:id="@+id/switchSignature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:checked="false"
+                android:theme="@style/SCBSwitch"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2sp"
+            android:layout_marginLeft="10sp"
+            android:background="#BDBDBD"
+            android:layout_marginTop="5sp"/>
+        <TextView
+            android:id="@+id/tvAllEmails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All Emails"
+            android:layout_marginTop="10sp"
+            android:textColor="#000"
+            android:textSize="17sp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5sp"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tvText3"
+                android:layout_width="0sp"
+                android:layout_weight="0.8"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:layout_marginTop="5sp"
+                android:text="This will turn all emails on or off at a\nglobal level. This will override all emails\nprefrences."/>
+
+            <Switch
+                android:id="@+id/switchAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:checked="false"
+                android:theme="@style/SCBSwitch"
+                />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2sp"
+            android:layout_marginLeft="10sp"
+            android:background="#BDBDBD"
+            android:layout_marginTop="5sp"/>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.techease.cpasolutions.Fragments.ClientDocumentsFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60sp">
+        <GridView
+            android:id="@+id/gridClientDocuments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="2"
+            android:layout_margin="20sp"
+            android:horizontalSpacing="10sp"
+            android:verticalSpacing="10dp"
+            ></GridView>
+        <Button
+            android:id="@+id/btnUpload"
+            android:layout_width="200sp"
+            android:layout_height="50sp"
+            android:text="Upload File"
+            android:layout_gravity="bottom|center"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="#fff"
+            android:layout_marginBottom="20sp"/>
+    </FrameLayout>
+</LinearLayout>

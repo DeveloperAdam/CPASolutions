@@ -1,0 +1,146 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context="com.techease.cpasolutions.Fragments.AccountSettingFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20sp"
+                android:layout_marginRight="20sp"
+                android:layout_marginLeft="20sp"
+                android:id="@+id/linearLayout">
+                <TextView
+                    android:id="@+id/tvFnameAS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="First Name"
+                    android:textSize="17sp"
+                    />
+                <EditText
+                    android:id="@+id/etFNameAS"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:hint="Males"
+                    android:layout_marginTop="5sp"
+                    />
+                <TextView
+                    android:id="@+id/tvLnameAS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Last Name"
+                    android:layout_marginTop="10sp"
+                    android:textSize="17sp"
+                    />
+                <EditText
+                    android:id="@+id/etLNameAS"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:hint="Hales"
+                    android:layout_marginTop="5sp"
+                    />
+                <TextView
+                    android:id="@+id/tvMNAS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mobile Number"
+                    android:layout_marginTop="10sp"
+                    android:textSize="17sp"
+                    />
+                <EditText
+                    android:id="@+id/etMNumAS"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_marginTop="5sp"
+                    android:hint="  +92 |"
+                    />
+                <TextView
+                    android:id="@+id/tvEmailAS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email Address"
+                    android:textSize="17sp"
+                    />
+                <EditText
+                    android:id="@+id/etEmailAS"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_marginTop="5sp"
+                    android:hint="Forexample@mail.com"
+                    />
+                <TextView
+                    android:id="@+id/tvPrintAS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Print As"
+                    android:layout_marginTop="10sp"
+                    android:textSize="17sp"
+                    />
+                <EditText
+                    android:id="@+id/etPrintAs"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_marginTop="5sp"
+                    android:hint="Testing"
+                    />
+                <TextView
+                    android:id="@+id/tvAddressAS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address"
+                    android:layout_marginTop="10sp"
+                    android:textSize="17sp"
+                    />
+                <EditText
+                    android:id="@+id/etAddressAS"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_marginTop="5sp"
+                    android:hint="address here"
+                    />
+                <TextView
+                    android:id="@+id/tvZipAS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Zip Code"
+                    android:layout_marginTop="10sp"
+                    android:textSize="17sp"
+                    />
+                <EditText
+                    android:id="@+id/etZipCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp"
+                    android:layout_marginTop="5sp"
+                    android:hint="Testing"
+                    />
+            </LinearLayout>
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_marginLeft="20sp"
+                android:text="Save"
+                android:layout_marginTop="20sp"
+                android:textColor="#fff"
+                android:textSize="17sp"
+                android:textAllCaps="false"
+                android:layout_marginRight="20sp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorPrimaryDark" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

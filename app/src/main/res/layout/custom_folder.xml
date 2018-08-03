@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_outer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        card_view:cardBackgroundColor="#fff"
+        card_view:cardCornerRadius="0dp"
+        card_view:cardElevation="3dp" >
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view_inner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            card_view:cardBackgroundColor="#fff"
+            card_view:cardCornerRadius="4dp"
+            card_view:cardElevation="0dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shadow"
+                android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/folder"
+                android:layout_marginTop="15sp"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/tvFolderName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Folder Name"
+                android:layout_marginTop="10sp"
+                android:textSize="17sp"
+                android:maxLines="1"
+                android:textStyle="bold"
+                android:layout_marginLeft="10sp"
+                android:textColor="@color/colorPrimaryDark"/>
+                <TextView
+                    android:id="@+id/tvtotalFiles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginBottom="10sp"
+                    android:text="Items 123"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

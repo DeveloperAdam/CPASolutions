@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">CPASolutions</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_navigation">NavigationActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="about">WELCOME TO CPA SOLUTIONS, INC. ORLANDO CPA FIRM LICENSED IN FLORIDA.
+
+If you are looking for a blend of personal service and expertise, you have come to the right place! Our Orlando CPA firm offers a broad range of services for business owners, medical professionals and independent professionals. Our rates are affordable. We are experienced and we’re friendly. Please call us for a free initial consultation.
+
+WHAT WE DO
+
+Our Orlando CPA firm provides outstanding service to our clients because of our dedication to our underlying principles.
+
+WHO WE ARE
+
+We are a full-service Orlando CPA firm licensed in FL. We are affordable, experienced, and friendly.
+
+
+WHO WE SERVE
+
+We offer a broad range of services for business owners, executives, and independent professionals.</string>
+
+</resources>
