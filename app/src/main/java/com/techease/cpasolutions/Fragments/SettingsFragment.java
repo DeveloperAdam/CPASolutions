@@ -23,6 +23,7 @@ public class SettingsFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_settings, container, false);
 
+        getActivity().setTitle("SETTING");
         typefaceBold = Typeface.createFromAsset(getActivity().getAssets(),  "fonts/Poppins-Medium.otf");
         typefaceThin = Typeface.createFromAsset(getActivity().getAssets(),  "fonts/Poppins-Light.otf");
         tvAccount=view.findViewById(R.id.tvAccountSetting);
@@ -39,6 +40,7 @@ public class SettingsFragment extends Fragment {
         tvContactUs.setTypeface(typefaceThin);
         tvEmailPrefrence.setTypeface(typefaceThin);
         tvChangePass.setTypeface(typefaceThin);
+        tvPayment.setTypeface(typefaceThin);
 
 
         tvChangePass.setOnClickListener(new View.OnClickListener() {
@@ -54,6 +56,14 @@ public class SettingsFragment extends Fragment {
             public void onClick(View v) {
 
                 Fragment fragment=new EmailPrefrenceFragment();
+                getFragmentManager().beginTransaction().replace(R.id.navContainer,fragment).addToBackStack("abc").commit();
+            }
+        });
+
+        tvAccount.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Fragment fragment = new AccountSettingFragment();
                 getFragmentManager().beginTransaction().replace(R.id.navContainer,fragment).addToBackStack("abc").commit();
             }
         });

@@ -1,6 +1,7 @@
 package com.techease.cpasolutions.Interfaces;
 
 import com.techease.cpasolutions.Retro.FileUploadResponseModel;
+import com.techease.cpasolutions.Retro.UpdateProfileResponseModel;
 
 import java.io.File;
 
@@ -30,6 +31,19 @@ public interface ApiInterface {
             @Part MultipartBody.Part photo,
             @Part("file") RequestBody file,
             @Part("note") RequestBody note
+
+    );
+
+    @FormUrlEncoded
+    @POST("UpdateProfile")
+    Call<UpdateProfileResponseModel> updateProfile(
+            @Field ("userid") String userid,
+            @Field ("firstname") String firstName,
+            @Field ("lastname") String lastName,
+            @Field ("zip") String zip,
+            @Field ("mobile") String mobile,
+            @Field ("address") String address,
+            @Field ("email") String email
 
     );
 }

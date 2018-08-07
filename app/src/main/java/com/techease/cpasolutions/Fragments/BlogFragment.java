@@ -56,6 +56,7 @@ public class BlogFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_blog, container, false);
 
+        getActivity().setTitle("BLOG");
         recyclerView=view.findViewById(R.id.rvBlogs);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         blogModelList=new ArrayList<>();

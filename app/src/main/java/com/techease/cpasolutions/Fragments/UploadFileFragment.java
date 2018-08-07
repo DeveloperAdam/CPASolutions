@@ -219,7 +219,6 @@ public class UploadFileFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 comment=etComment.getText().toString();
-                Toast.makeText(getActivity(), file.toString(), Toast.LENGTH_SHORT).show();
                 if (alertDialog==null)
                 {
                     alertDialog= AlertsUtils.createProgressDialog(getActivity());

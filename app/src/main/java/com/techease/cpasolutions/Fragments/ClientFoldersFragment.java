@@ -62,7 +62,7 @@ public class ClientFoldersFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_client_folders, container, false);
 
-
+        getActivity().setTitle("CLIENT PORTAL");
         sharedPreferences = getActivity().getSharedPreferences("abc", Context.MODE_PRIVATE);
         editor = sharedPreferences.edit();
         gridView=view.findViewById(R.id.gridClientFolder);

@@ -8,7 +8,8 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -34,6 +35,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="50sp"
                     android:hint="Males"
+                    android:backgroundTint="#BDBDBD"
+                    android:textColor="#BDBDBD"
                     android:layout_marginTop="5sp"
                     />
                 <TextView
@@ -49,6 +52,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="50sp"
                     android:hint="Hales"
+                    android:backgroundTint="#BDBDBD"
+                    android:textColor="#BDBDBD"
                     android:layout_marginTop="5sp"
                     />
                 <TextView
@@ -63,6 +68,9 @@
                     android:id="@+id/etMNumAS"
                     android:layout_width="match_parent"
                     android:layout_height="50sp"
+                    android:backgroundTint="#BDBDBD"
+                    android:textColor="#BDBDBD"
+                    android:inputType="number"
                     android:layout_marginTop="5sp"
                     android:hint="  +92 |"
                     />
@@ -71,12 +79,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Email Address"
+
                     android:textSize="17sp"
                     />
                 <EditText
                     android:id="@+id/etEmailAS"
                     android:layout_width="match_parent"
                     android:layout_height="50sp"
+                    android:inputType="textEmailAddress"
+                    android:backgroundTint="#BDBDBD"
+                    android:textColor="#BDBDBD"
                     android:layout_marginTop="5sp"
                     android:hint="Forexample@mail.com"
                     />
@@ -92,6 +104,8 @@
                     android:id="@+id/etPrintAs"
                     android:layout_width="match_parent"
                     android:layout_height="50sp"
+                    android:backgroundTint="#BDBDBD"
+                    android:textColor="#BDBDBD"
                     android:layout_marginTop="5sp"
                     android:hint="Testing"
                     />
@@ -108,7 +122,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="50sp"
                     android:layout_marginTop="5sp"
-                    android:hint="address here"
+                    android:backgroundTint="#BDBDBD"
+                    android:textColor="#BDBDBD"
+                    android:hint="Address Here"
                     />
                 <TextView
                     android:id="@+id/tvZipAS"
@@ -122,8 +138,11 @@
                     android:id="@+id/etZipCode"
                     android:layout_width="match_parent"
                     android:layout_height="50sp"
+                    android:backgroundTint="#BDBDBD"
+                    android:textColor="#BDBDBD"
+                    android:inputType="number"
                     android:layout_marginTop="5sp"
-                    android:hint="Testing"
+                    android:hint="Zip Code"
                     />
             </LinearLayout>
             <Button

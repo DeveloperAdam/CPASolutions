@@ -70,6 +70,7 @@ public class ViewDocumentFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_view_document, container, false);
 
+        getActivity().setTitle("DOCUMENT DETAILS");
         typefaceBold = Typeface.createFromAsset(getActivity().getAssets(),  "fonts/Poppins-Medium.otf");
         typefaceThin = Typeface.createFromAsset(getActivity().getAssets(),  "fonts/Poppins-Light.otf");
         sharedPreferences = getActivity().getSharedPreferences("abc", Context.MODE_PRIVATE);

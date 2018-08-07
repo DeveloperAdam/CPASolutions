@@ -56,6 +56,7 @@ public class ChangePasswordFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_change_password, container, false);
 
+        getActivity().setTitle("UPDATE PASSWORD");
         sharedPreferences = getActivity().getSharedPreferences("abc", Context.MODE_PRIVATE);
         editor = sharedPreferences.edit();
         checkCurrentPass=sharedPreferences.getString("currentpass","");

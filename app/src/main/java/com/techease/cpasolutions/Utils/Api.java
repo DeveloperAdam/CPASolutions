@@ -9,6 +9,7 @@ public class Api {
     public  static String signUp="http://divergense.com/cpa/signup/register";
     public  static String login="http://divergense.com/cpa/signup/login";
     public  static String folderList="http://divergense.com/cpa/app/allFolders";
+    public  static String updateProfile="http://divergense.com/cpa/app/UpdateProfile";
     public  static String createFolder="http://divergense.com/cpa/app/createFolder";
     public  static String createFile="http://divergense.com/cpa/app/uploadFile";
     public  static String filesInFoler="http://divergense.com/cpa/app/allFiles";

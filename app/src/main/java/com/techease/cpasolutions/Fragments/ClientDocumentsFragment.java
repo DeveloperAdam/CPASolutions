@@ -61,6 +61,7 @@ public class ClientDocumentsFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_client_documents, container, false);
 
+        getActivity().setTitle("FILES");
         sharedPreferences = getActivity().getSharedPreferences("abc", Context.MODE_PRIVATE);
         editor = sharedPreferences.edit();
         folderId=getArguments().getString("folderid");
